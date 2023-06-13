@@ -1,0 +1,259 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(./fonts/Montserrat-VariableFont_wght.ttf);
+}
+:root {
+  --white: #ffffff;
+  --primary-color: #1fa1db;
+  --black-bg: #231f20;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+.container-fluid {
+  max-width: 1500px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+.container {
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+.primary-btn {
+  padding: 14px;
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: capitalize;
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
+}
+.blue-btn {
+  background: var(--primary-color);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: var(--white);
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  width: 224px;
+  height: 60px;
+}
+.section-head {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  color: #231f20;
+}
+/* welcome section styling  */
+.welcome {
+  background: linear-gradient(
+      0deg,
+      rgba(35, 31, 32, 0.3),
+      rgba(35, 31, 32, 0.3)
+    ),
+    url(./assets/banner-img.svg);
+  min-height: 900px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* navbar styling */
+header .logo {
+  width: 269.47px;
+  height: 70px;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+#toggleBtn {
+  display: none;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: var(--white);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  white-space: nowrap;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.welcome > div.container:nth-child(2) {
+  display: grid;
+}
+.banner-head {
+  text-align: center;
+  place-self: center;
+}
+.welcome-text {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 35px;
+  text-align: center;
+  color: var(--white);
+}
+.roi {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--white);
+}
+.banner-head h1 {
+  margin-top: 247px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 70px;
+  text-align: center;
+  color: var(--white);
+}
+.banner-head button {
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+/* banner-bottom styling */
+.banner-bottom {
+  background: var(--primary-color);
+  min-height: 160px;
+}
+.banner-bottom > .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
+.banner-bottom .card {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex: 1;
+}
+.banner-bottom .card .card-title p {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+/* field styling */
+
+.field {
+  min-height: 700px;
+  padding: 100px 0;
+}
+.field .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 132px;
+}
+.field-child {
+  flex: 1;
+}
+
+.field-child p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #231f20;
+}
+.field-content {
+  display: grid;
+  place-items: center;
+}
+
+/* slaes section styling */
+
+.sales {
+  background: #f8f8f8;
+  padding: 100px 0;
+}
+.sales .section-head {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.sales .card-container {
+  display: flex;
+  gap: 61px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.sales .card-container .card {
+  flex: 1;
+}
+.sales .card-container .card .card-content {
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+/* feedback styling  */
+
+.feedback {
+  background: url(./assets/feedback-bg-img.png);
+  mix-blend-mode: multiply;
+  padding: 160px 0;
+  min-height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.feedback .card-container {
+  display: flex;
+  gap: 110px;
+  flex-wrap: wrap;
+}
+.feedback .card-container .card {
+  flex: 1;
+  display: flex;
+  gap: 30px;
+}
+.feedback .card-container .card .card-profile {
+  text-align: center;
+  margin-top: 10px;
+}
+.feedback .card-container .card .card-profile p {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: var(--white);
+}
+.feedback .card-container .card .feedback-content p {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--white);
+}
