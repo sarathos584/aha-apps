@@ -65,6 +65,10 @@
   background: #dddddd;
   margin: 100px 0;
 }
+
+/* mobile navbar  */
+
+
 /* welcome section styling  */
 .welcome {
   background: linear-gradient(
@@ -73,13 +77,18 @@
       rgba(35, 31, 32, 0.3)
     ),
     url(./assets/banner-img.svg);
-  min-height: 900px;
+  min-height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-top: 15px;
 }
 
 /* navbar styling */
+/* #fixedNav{
+    position: fixed;
+    width: 100%;
+} */
 header .logo {
   width: 269.47px;
   height: 70px;
@@ -92,6 +101,10 @@ header .logo {
 }
 #toggleBtn {
   display: none;
+}
+#toggleBtn img {
+    color: var(--primary-color);
+    width: 30px;
 }
 nav ul {
   display: flex;
@@ -116,12 +129,9 @@ header {
   align-items: center;
 }
 
-.welcome > div.container:nth-child(2) {
-  display: grid;
-}
 .banner-head {
   text-align: center;
-  place-self: center;
+  margin-top: 10%;
 }
 .welcome-text {
   font-weight: 500;
@@ -138,7 +148,7 @@ header {
   color: var(--white);
 }
 .banner-head h1 {
-  margin-top: 247px;
+  /* margin-top: 247px; */
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 50px;
@@ -167,6 +177,7 @@ header {
   display: flex;
   gap: 20px;
   align-items: center;
+  justify-content: center;
   flex: 1;
 }
 .banner-bottom .card .card-title p {
@@ -339,6 +350,10 @@ header {
   display: flex;
   justify-content: center;
   gap: 140px;
+  flex-wrap: wrap;
+}
+.about .about-container .image img {
+  width: 100%;
 }
 .about .about-container .flex-1 {
   flex: 1;
@@ -358,10 +373,12 @@ header {
   display: flex;
   justify-content: center;
   gap: 132px;
+  flex-wrap: wrap;
 }
 .works .flex-1 {
   flex: 1;
 }
+
 .works h2 {
   font-weight: 700;
   font-size: 35px;
@@ -388,9 +405,41 @@ header {
   height: 60px;
 }
 .companies {
+  padding: 60px 0;
   min-height: 270px;
 }
+.companies .company-container {
+  max-width: 1300px;
+  padding: 15px 0;
+  margin: 0 auto;
+  /* display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center; */
+}
+.companies .company-container .slider-left{
+  position: relative;
+  display: inline;
+  top: 104px;
+  
 
+}
+.companies .company-logos {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.companies .card {
+  border: 1px solid #eeeeee;
+  border-radius: 10px;
+  padding: 50px 59px;
+}
+.companies .company-logos .card img {
+  height: 59px;
+  width: 160px;
+}
 /* footer section styling */
 .footer-underline {
   background: #dddddd;
@@ -414,4 +463,195 @@ header {
   font-size: 14px;
   line-height: 17px;
   color: #8c8c8c;
+}
+.footer .contact .question {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  color: #8c8c8c;
+}
+.footer .contact .via {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  color: var(--primary-color);
+}
+.upper-footer,
+.middle-footer,
+.lower-footer {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .address {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.footer .address .location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.footer .navlist {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.footer .media-icon img {
+  margin-left: 10px;
+}
+.footer .lower-footer .left {
+  display: flex;
+  gap: 59px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.footer .lower-footer .left .contact {
+  display: flex;
+  gap: 17px;
+}
+
+/* mediaquery styling for responsiveness */
+
+@media screen and (max-width: 768px) {
+  section {
+    padding: 65px 0 !important;
+  }
+  .navbar nav,
+  .navbar .nav-btn {
+    display: none ;
+  }
+  #toggleBtn {
+    display: inline-block;
+  }
+  .field .container {
+    display: block;
+    text-align: center;
+  }
+  .field .container img {
+    width: 100% !important;
+  }
+  .tools .planning {
+    display: block;
+    text-align: center;
+  }
+  .tools .route {
+    margin-top: 2rem;
+  }
+  .about .about-container {
+    display: block;
+  }
+  .works .container {
+    display: block;
+    text-align: center;
+  }
+  .works .content {
+    display: block;
+  }
+  .works .content button {
+    margin-top: 2rem;
+  }
+  .works .image {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  .works .image img {
+    width: 100% !important;
+  }
+  .footer {
+    text-align: center;
+  }
+  .upper-footer,
+  .middle-footer,
+  .lower-footer {
+    display: block;
+    text-align: center;
+  }
+  .footer .logo {
+    margin-bottom: 1rem;
+  }
+  .footer .navlist {
+    margin-bottom: 1rem;
+  }
+  .footer .lower-footer .left {
+    margin-bottom: 1rem;
+  }
+  .footer {
+    padding: 30px 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  .section-head {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 40px;
+  }
+  section {
+    padding: 25px 0 !important;
+  }
+  .underline {
+    margin: 1.5rem 0;
+  }
+  .banner-head {
+    margin-top: 1rem !important;
+  }
+  .banner-head button {
+    margin: 1rem 1rem;
+  }
+  .banner-head h1 {
+    font-size: 40px;
+    line-height: 60px;
+  }
+  .banner-bottom > .container {
+    display: block;
+  }
+  .banner-bottom .card {
+    justify-content: flex-start;
+  }
+  .feedback .card-container .card {
+    display: block;
+  }
+  .feedback .card-container .card .feedback-content p {
+    text-align: center;
+  }
+  .feedback .card-container {
+    display: block;
+  }
+  .feedback .card-container .card {
+    margin-bottom: 2rem;
+  }
+  .about .section-head,
+  .sales .section-head {
+    margin-bottom: 1rem;
+  }
+  .sales .card-container {
+    gap: 30px;
+  }
+  .sales .card-container .card {
+    text-align: center;
+  }
+  .footer .lower-footer .left .contact {
+    display: block;
+  }
+  .footer .lower-footer .left .contact {
+    justify-content: center;
+  }
+  .footer .lower-footer .left {
+    gap: 1rem;
+  }
+}
+@media screen and (max-height: 680px) {
+  .welcome {
+    height: 900px !important;
+  }
+  .banner-head {
+    margin-top: 20%;
+  }
 }

@@ -8,51 +8,52 @@
   </head>
   <body>
     <section class="welcome">
-      <div class="container-fluid">
-        <header>
-          <div class="logo">
-            <img src="./assets/logo.svg" alt="company logo" />
-          </div>
-          <div class="navbar">
-            <nav>
-              <ul>
-                <li class="nav-list"><a href="#" class="nav-items">Home</a></li>
-                <li>
-                  <a
-                    href="#"
-                    class="nav-list dropdown-toggle"
-                    id="dropdownMenuLink"
-                    >Services</a
-                  >
-                  <!-- <div class="dropdown-menu">
+      <div id="fixedNav open-nav">
+        <div class="container-fluid">
+          <header>
+            <div class="logo">
+              <img src="./assets/logo.svg" alt="company logo" />
+            </div>
+            <div class="navbar">
+              <nav>
+                <ul>
+                  <li class="nav-list">
+                    <a href="#" class="nav-items">Home</a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="nav-list dropdown-toggle"
+                      id="dropdownMenuLink"
+                      >Services</a
+                    >
+                    <!-- <div class="dropdown-menu">
                     <a href="#" class="dropdown-item">Disabled</a>
                   </div> -->
-                </li>
-                <li class="nav-list">
-                  <a href="#" class="nav-items">Case Studies</a>
-                </li>
-                <li class="nav-list">
-                  <a href="#" class="nav-items">Company</a>
-                </li>
-                <li class="nav-list">
-                  <a href="#" class="nav-items">Company</a>
-                </li>
-                <li class="nav-list">
-                  <a href="#" class="nav-items">Support</a>
-                </li>
-              </ul>
-            </nav>
-            <div class="nav-btn">
-              <button class="blue-btn">Schedule a Demo</button>
+                  </li>
+                  <li class="nav-list">
+                    <a href="#" class="nav-items">Case Studies</a>
+                  </li>
+                  <li class="nav-list">
+                    <a href="#" class="nav-items">Company</a>
+                  </li>
+                  <li class="nav-list">
+                    <a href="#" class="nav-items">Company</a>
+                  </li>
+                  <li class="nav-list">
+                    <a href="#" class="nav-items">Support</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="nav-btn">
+                <button class="blue-btn">Schedule a Demo</button>
+              </div>
             </div>
             <div id="toggleBtn">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
+              <img src="./assets/bars-solid.svg" alt="toggle icon">
             </div>
-          </div>
-        </header>
+          </header>
+        </div>
       </div>
       <div class="container welcome-note">
         <div class="banner-head">
@@ -289,7 +290,16 @@
       </div>
     </section>
     <section class="companies">
-      <div class="container"></div>
+      <div class="company-container">
+        <div class="slider-left"><img src="./assets/slide-left.svg" alt="slide icon"></div>
+        <div class="company-logos">
+            <div class="card"><img src="./assets/company-img-1.svg" alt="company img"></div>
+            <div class="card"><img src="./assets/company-img-2.svg" alt="company img"></div>
+            <div class="card"><img src="./assets/company-img-3.svg" alt="company img"></div>
+            <div class="card"><img src="./assets/company-img-4.svg" alt="company img"></div>
+        </div>
+        <div class="slider-right"><img src="./assets/slide-right.svg" alt="slide icon"></div>
+      </div>
     </section>
     <section class="footer">
       <footer class="container">
@@ -300,33 +310,56 @@
           <div class="address">
             <div class="location">
               <img src="./assets/location-icon.svg" alt="location icon" />
-              <p>9211 Forest Hill Ave, Suite 201 Richmond, VA 23235</p>
+              <p>
+                9211 Forest Hill Ave, Suite 201 <br />
+                Richmond, VA 23235
+              </p>
             </div>
             <div class="location">
               <img src="./assets/location-icon.svg" alt="location icon" />
-              <p>1775 Tysons Blvd, Tysons, VA 22102.</p>
+              <p>1775 Tysons Blvd, Tysons, VA <br />22102.</p>
             </div>
           </div>
         </div>
         <div class="footer-underline"></div>
         <div class="footer-content middle-footer">
-            <div class="navlist">
-                <a href="#">Home</a>
-                <a href="#">Services</a>
-                <a href="#">Case Studies</a>
-                <a href="#">Company</a>
-                <a href="#">Shedule a Demo</a>
-            </div>
-            <div class="media-icon">
-               <img src="./assets/twitter-icon.svg" alt="twitter icon">
-               <img src="./assets/linkedIn-icon.svg" alt="linkedIn icon">
-            </div>
+          <div class="navlist">
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">Case Studies</a>
+            <a href="#">Company</a>
+            <a href="#">Shedule a Demo</a>
+          </div>
+          <div class="media-icon">
+            <img src="./assets/twitter-icon.svg" alt="twitter icon" />
+            <img src="./assets/linkedIn-icon.svg" alt="linkedIn icon" />
+          </div>
         </div>
         <div class="footer-underline"></div>
         <div class="lower-footer">
+          <div class="left">
             <div class="contact">
-                
+              <div class="icon">
+                <img src="./assets/phone-icon.svg" alt="phone icon" />
+              </div>
+              <div>
+                <a href="#" class="question">Have a question?</a>
+                <a href="#" class="via">+1 804-215-4497</a>
+              </div>
             </div>
+            <div class="contact">
+              <div class="icon">
+                <img src="./assets/mail-icon.svg" alt="mail icon" />
+              </div>
+              <div>
+                <a href="#" class="question">Contact us at</a>
+                <a href="#" class="via">sales@ahaapps.com</a>
+              </div>
+            </div>
+          </div>
+          <div class="right">
+            <p>Copyright © 2022 Aha Apps</p>
+          </div>
         </div>
       </footer>
     </section>
