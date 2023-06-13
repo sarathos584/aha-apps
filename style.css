@@ -2,6 +2,10 @@
   font-family: Montserrat;
   src: url(./fonts/Montserrat-VariableFont_wght.ttf);
 }
+@font-face {
+  font-family: Avenir;
+  src: url(./fonts/avenir_ff/AvenirLTStd-Book.otf);
+}
 :root {
   --white: #ffffff;
   --primary-color: #1fa1db;
@@ -55,6 +59,11 @@
   font-size: 40px;
   line-height: 50px;
   color: #231f20;
+}
+.underline {
+  height: 1px;
+  background: #dddddd;
+  margin: 100px 0;
 }
 /* welcome section styling  */
 .welcome {
@@ -251,9 +260,158 @@ header {
   color: var(--white);
 }
 .feedback .card-container .card .feedback-content p {
+  font-family: Avenir !important;
   font-style: italic;
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
   color: var(--white);
+}
+
+/* tools section styling */
+.tools {
+  padding: 100px 0;
+}
+.tools .section-head {
+  margin-bottom: 40px;
+}
+.tools .planning {
+  display: flex;
+  gap: 133px;
+  flex-wrap: wrap;
+}
+.tools .steps {
+  margin-bottom: 50px;
+}
+.tools .flex-1 {
+  flex: 1;
+}
+.tools .steps h2 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #231f20;
+  margin-bottom: 10px;
+}
+.tools .steps span {
+  background: var(--primary-color);
+  color: var(--white) !important;
+  border-radius: 10px;
+  padding: 5px 16px;
+  margin-right: 15px;
+}
+.tools .steps p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #231f20;
+}
+.tools .results {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.tools .results .card {
+  text-align: center;
+  flex: 1;
+  min-height: 130px;
+  border: 1px solid var(--primary-color);
+  border-radius: 20px;
+  padding: 49px 29px;
+}
+.tools .results .card img {
+  position: relative;
+  bottom: 69px;
+}
+
+/* about section styling  */
+.about {
+  min-height: 910px;
+  background: #f8f8f8;
+  padding: 100px 0;
+  text-align: center;
+}
+.about .section-head {
+  margin-bottom: 60px;
+}
+.about .about-container {
+  display: flex;
+  justify-content: center;
+  gap: 140px;
+}
+.about .about-container .flex-1 {
+  flex: 1;
+}
+.about .about-container .content p {
+  text-align: left !important;
+  margin-bottom: 2.5rem;
+}
+
+/* works section styling */
+
+.works {
+  padding: 100px 0;
+  background: var(--primary-color);
+}
+.works .container {
+  display: flex;
+  justify-content: center;
+  gap: 132px;
+}
+.works .flex-1 {
+  flex: 1;
+}
+.works h2 {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 45px;
+  color: #ffffff;
+}
+.works .content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 35px;
+}
+.works button {
+  background: var(--white);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: var(--primary-color);
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  width: 224px;
+  height: 60px;
+}
+.companies {
+  min-height: 270px;
+}
+
+/* footer section styling */
+.footer-underline {
+  background: #dddddd;
+  opacity: 0.2;
+  height: 1px;
+  margin: 30px 0;
+}
+.footer {
+  background: #231f20;
+  padding: 60px 0;
+}
+.footer p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #8c8c8c;
+}
+.footer .navlist a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #8c8c8c;
 }
