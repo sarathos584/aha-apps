@@ -67,8 +67,26 @@
 }
 
 /* mobile navbar  */
-
-
+.open-nav {
+  display: none !important;
+}
+.open-nav ul {
+  display: block !important;
+  text-align: center;
+}
+.open-nav nav {
+  display: flex !important;
+  justify-content: center;
+}
+.open-nav ul li {
+  margin-bottom: 1rem;
+}
+.open-nav ul li:first-child {
+  margin-top: 1rem;
+}
+.close-nav nav {
+  display: none;
+}
 /* welcome section styling  */
 .welcome {
   background: linear-gradient(
@@ -77,11 +95,17 @@
       rgba(35, 31, 32, 0.3)
     ),
     url(./assets/banner-img.svg);
-  min-height: 100vh;
+  min-height: 900px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 15px;
+}
+.welcome .container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 900px;
 }
 
 /* navbar styling */
@@ -103,8 +127,8 @@ header .logo {
   display: none;
 }
 #toggleBtn img {
-    color: var(--primary-color);
-    width: 30px;
+  color: var(--primary-color);
+  width: 30px;
 }
 nav ul {
   display: flex;
@@ -131,7 +155,7 @@ header {
 
 .banner-head {
   text-align: center;
-  margin-top: 10%;
+  /* margin-top: 10%; */
 }
 .welcome-text {
   font-weight: 500;
@@ -412,18 +436,23 @@ header {
   max-width: 1300px;
   padding: 15px 0;
   margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
   /* display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
   align-items: center; */
 }
-.companies .company-container .slider-left{
-  position: relative;
+/* .companies .company-container .slider-left{
+  position: absolute;
   display: inline;
-  top: 104px;
-  
+  top: 50%;
+  left: -50px;
 
-}
+} */
 .companies .company-logos {
   display: flex;
   gap: 30px;
@@ -524,9 +553,17 @@ header {
   section {
     padding: 65px 0 !important;
   }
+  .open-nav {
+    display: block !important;
+    overflow-x: hidden;
+    position: absolute;
+    width: 100%;
+    background: var(--primary-color);
+    left: 0;
+  }
   .navbar nav,
   .navbar .nav-btn {
-    display: none ;
+    display: none;
   }
   #toggleBtn {
     display: inline-block;
@@ -565,6 +602,9 @@ header {
   .works .image img {
     width: 100% !important;
   }
+  .field .section-head {
+    margin-bottom: 1.5rem;
+  }
   .footer {
     text-align: center;
   }
@@ -587,6 +627,7 @@ header {
     padding: 30px 0;
   }
 }
+
 @media screen and (max-width: 576px) {
   .section-head {
     font-weight: 600;
@@ -611,6 +652,7 @@ header {
   }
   .banner-bottom > .container {
     display: block;
+    padding: 0 15px;
   }
   .banner-bottom .card {
     justify-content: flex-start;
@@ -646,12 +688,86 @@ header {
   .footer .lower-footer .left {
     gap: 1rem;
   }
-}
-@media screen and (max-height: 680px) {
-  .welcome {
-    height: 900px !important;
+  header {
+    gap: 0.6rem;
   }
-  .banner-head {
-    margin-top: 20%;
+  .welcome .logo img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 360px) {
+  .primary-btn {
+    padding: 9px;
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: capitalize;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+  }
+  .blue-btn {
+    background: var(--primary-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    color: var(--white);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    width: 150px;
+    height: 40px;
+  }
+  .welcome .logo img {
+    width: 100%;
+  }
+  header {
+    gap: 1rem;
+  }
+  .feedback .card-container .card {
+    display: block;
+  }
+  .banner-head h1 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .banner-bottom .card {
+    display: block;
+    text-align: center;
+  }
+  .banner-bottom .card img {
+    width: 50px;
+  }
+  .banner-bottom .card .card-title p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .companies .card {
+    padding: 25px 4px;
+  }
+  .companies .slider-left,
+  .companies .slider-right {
+    display: none;
+  }
+  .works button {
+    width: 150px;
+    height: 40px;
+  }
+  .works h2,
+  .tools .section-head{
+    font-size: 23px;
+    line-height: 33px;
+  }
+  .tools .results .card{
+    padding: 49px 3px;
+  }
+  .footer .address {
+    display: block;
+  }
+  .footer .logo img {
+    width: 100%;
   }
 }

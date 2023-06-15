@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>aha apps</title>
     <link rel="stylesheet" href="./style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="./main.js"></script>
   </head>
   <body>
     <section class="welcome">
-      <div id="fixedNav open-nav">
+      <div id="fixedNav">
         <div class="container-fluid">
           <header>
             <div class="logo">
@@ -25,7 +27,7 @@
                       href="#"
                       class="nav-list dropdown-toggle"
                       id="dropdownMenuLink"
-                      >Services</a
+                      >Services <img src="./assets/dropdown.svg" alt="dropdown arrow"></a
                     >
                     <!-- <div class="dropdown-menu">
                     <a href="#" class="dropdown-item">Disabled</a>
@@ -53,6 +55,38 @@
               <img src="./assets/bars-solid.svg" alt="toggle icon">
             </div>
           </header>
+          <div class="close-nav" id="mobile-nav">
+            <nav>
+            <ul>
+              <li class="nav-list-mobile">
+                <a href="#" class="nav-items">Home</a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="nav-list-mobile dropdown-toggle"
+                  id="dropdownMenuLink"
+                  >Services</a
+                >
+                <!-- <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">Disabled</a>
+              </div> -->
+              </li>
+              <li class="nav-list-mobile">
+                <a href="#" class="nav-items">Case Studies</a>
+              </li>
+              <li class="nav-list-mobile">
+                <a href="#" class="nav-items">Company</a>
+              </li>
+              <li class="nav-list-mobile">
+                <a href="#" class="nav-items">Company</a>
+              </li>
+              <li class="nav-list-mobile">
+                <a href="#" class="nav-items">Support</a>
+              </li>
+            </ul>
+          </nav>
+          </div>
         </div>
       </div>
       <div class="container welcome-note">
