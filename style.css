@@ -377,13 +377,13 @@ header {
   flex-wrap: wrap;
 }
 .about .about-container .image img {
-  width: 100%;
+  width: 70%;
 }
 .about .about-container .flex-1 {
   flex: 1;
 }
 .about .about-container .content p {
-  text-align: left !important;
+  text-align: left ;
   margin-bottom: 2.5rem;
 }
 
@@ -529,7 +529,8 @@ header {
 }
 .footer .navlist {
   display: flex;
-  gap: 30px;
+  column-gap: 30px;
+  row-gap: 15px;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -769,5 +770,8 @@ header {
   }
   .footer .logo img {
     width: 100%;
+  }.about .about-container .content p{
+    text-align: center;
   }
+
 }
